@@ -29,16 +29,6 @@ public class AstBuilder {
 		mainClass = new MainClass(null, null, null);
 	}
 
-	/*
-	 public BuildAST(){
-
-	}
-	public MainClass buildMainClass(){
-
-		return new MainClass(null, null, null);
-	}
-	 */
-
 	public Program visitGoal(GoalContext goal) {
 		mainClass = visitMainClass(goal.mainClass());
 		classDeclList = visitClassDeclList(goal.classDeclaration());

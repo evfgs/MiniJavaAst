@@ -51,3 +51,4 @@ expression :
 Identifier : [a-zA-Z0-9_]+;
 INTEGER_LITERAL : [0-9]+;
 ESPACOS: [' \r\n\t //']+ ->skip;
+//espaços e comentarios -> skip
